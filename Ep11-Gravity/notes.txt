@@ -1,0 +1,19 @@
+We talked about gravity and how it is relative to the size of mass and the
+distance to the mass.
+
+gravity = G * m / r^2, where G is the gravitational constant, m is the mass,
+and r is the distance between the centers of the objects.
+
+For programming purposes, you really don't need to know the value of G, you
+just need the relationship of m/r^2.
+
+To help with gravity, we added a mass property to the particle object.
+
+We also added an angleTo method to determine the angle between two objects and
+a distanceTo method to determine the distance between two objects. These two
+methods will allow us to determine the proper gravity vectors.
+
+We consolidated all of that into a gravitateTo method.
+
+Using these methods, we were able to create a sun and a planet in orbit.
+

@@ -1,0 +1,4 @@
+In order to really move into 3D space and out of 2.5D, we need to create 3D
+models. We can do this by creating structures with vertices and manipulate
+these vertices with the 2.5D tricks. Then, we can build the 3D model using
+those 2.5D vertices.

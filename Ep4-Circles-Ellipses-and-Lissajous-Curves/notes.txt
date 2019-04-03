@@ -1,0 +1,17 @@
+In this lesson, we expand on Ep3 to move our circle in more interesting ways.
+
+It is quite simple to animate our circle to move in a circle. Converting
+to cartesian from polar is quite simple:
+    x = r * cos(theta)
+    y = r * sin(theta)
+
+Of course, to create an ellipse, you simply need two "radius" values:
+    x = a * cos(theta)
+    y = b * sin(theta)
+
+Now if you also have two different speeds for the change in theta's, you create
+a Lissajous curve, which looks a bit like a fly or a bee flying about.
+
+For this one, I did a little side research and experimented to be able to
+randomly place multiple "bees" and animated them with Lissajous curves.
+

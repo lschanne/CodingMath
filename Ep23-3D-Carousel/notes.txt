@@ -1,0 +1,11 @@
+Disclaimer: 3D Carousels suck; please don't use them professionally.
+
+We will investigate how to create one here though in order to further explore
+3D imaging.
+
+We will of course be building on the 3D postcards in space.
+
+One thing to consider that isn't obvious jsut from drawing a bunch of black
+squares is that we need to draw objects further away first. That way, we don't
+have to worry about objects in the background overlapping objects in the
+foreground. We will handle that by implementing a zsort function.

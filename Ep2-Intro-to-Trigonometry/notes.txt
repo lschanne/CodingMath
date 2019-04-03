@@ -1,0 +1,26 @@
+Well this series might be a total waste of my time.
+
+This video covered hypotenuse, adjacent, opposite, and sine.
+
+If you ever forget, just remember SOH CAH TOA.
+
+On most computer screens, the y-axis is actually flipped from the typical
+cartesian coordinate system. The negative y-axis is at the top of the screen,
+and the positive y-axis is at the bottom of the screen.
+
+This flip also means that the measurement of angles on the screen goes
+clockwise rather than counter-clockwise.
+
+And of course, bear in mind that programming functions will take radians
+rather than degrees.
+    degrees = radians * 180 / pi
+    radians = degrees * pi / 180
+
+The index.html is pulled right from Ep1. I did remove the character encoding
+just to see if it works without that. It is fine without the encoding, but the
+console log still complains. I would just include explicit encoding, but maybe
+I will learn more on that topic going forward.
+
+We use JavaScript to print the sine values from theta = 0..2pi
+and draw a sine wave.
+

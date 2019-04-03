@@ -1,0 +1,14 @@
+The index.html has been updated a bit from the one we've been using so far.
+It is pointing to multiple scripts.
+
+We also build on the vector.js script from Ep7.
+We also added a new particle.js script to manage our "physical object".
+
+When we define speed, typically we default to using pixels per frame. The
+actual observed speed can vary quite a bit depending on the frames per second.
+If the computer is slow or dealing with a heavy load, the frame animation rate
+may decrease.
+
+If the script is computationally intense, that may also decrease the frame rate
+or even cause frames to be skipped.
+

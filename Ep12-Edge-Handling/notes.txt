@@ -1,0 +1,25 @@
+In this episode, we discuss strategies for handling what should happen when an
+object reaches and/or passes the edge of the screen.
+
+In Ep-10, we used a very simple screen wrapping technique.
+
+Our techniques will involve utilizing the radius of the particle, so we have
+added that attribute to our particle object.
+
+We need to refine the screen wrapping so that the particle moving on and off
+screen is more gradual.
+Check wrapping.js
+
+Another strategy is to simply remove a particle when it moves off the screen
+to avoid wasting computation and rendering on obsolete objects.
+Check removal.js
+
+The next strategy is known as "regeneration". When an object goes off screen,
+it is recycled and placed at some emitter point to be reused.
+Check regenerate.js
+
+The last strategy we will cover is bouncing. When a particle hits the edge of
+the screen, it will "bounce" off of it.
+We use an approximation for our reflection rather than using some snell's law.
+Check bouncing.js
+

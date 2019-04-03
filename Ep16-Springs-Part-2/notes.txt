@@ -1,0 +1,19 @@
+##### Part A #####
+In reality, most springs have a certain length at which they come to rest.
+
+In Ep15, we were working with an implicit assumption that that rest length
+was zero.
+
+In this episode, we will step it up a notch.
+
+##### Part B #####
+Now we will make two particles spring towards each other, so think of a single
+spring connecting two weights.
+
+We also had to add some edge handling to this script.
+
+##### Part C #####
+Now we'll make a little spring triangle. It'll be dope.
+
+We'll also improve on the things done in Part B.
+

@@ -1,0 +1,20 @@
+We started by looking at a nice formula for rotating a point in 2D space.
+
+Say you have a point (x,y) on a 2D plane, and you want to rotate that point by
+some angle theta (while keeping the distance from the origin the same). Then
+you will have a new coordinate pair, (x', y'), where
+    x' = x * cos(theta) - y * sin(theta)
+    y' = y * cos(theta) + x * sin(theta)
+
+rotate2d.js demonstrates this formula.
+
+To extend this rotation to 3 dimensions is quite easy. In 3D, we pick an axis
+around which to rotate. To make this easy, we will rotate around either the
+x-axis, the y-axis, or the z-axis. Note that we can always do rotations in this
+fashion by redefining the axes. Then, rotating around an axis in 3D is exactly
+the same as the 2D rotation we did. That rotation happens to rotate around the
+z-axis. If you want to rotate around the x-axis, you can swap x and x' for
+z and z'. If you want to rotate around the y-axis, you can swap y and y' for
+z and z'.
+
+rotate3d.js demonstrates this concept.

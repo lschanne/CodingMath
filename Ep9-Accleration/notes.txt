@@ -1,0 +1,9 @@
+We updated our particle object to include an acceleration.
+
+Similar to velocity, acceleration is in units of pixels per frame per frame
+by default. We can adjust our program to standardize velocity and acceleration
+to be per second rather than per frame.
+
+We also added a gravity component to our particle object. We looked at how to
+set the default value to 0 by using an or ( "||" ), so that was interesting.
+

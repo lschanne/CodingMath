@@ -1,0 +1,13 @@
+In this video, the guy talks about cosine and tangent and relates them to sine.
+
+Again, pretty basic math stuff.
+
+I guess one interesting thing to remember is that at 90 degrees and -90
+degrees, the tangent function approaches both infinity and negative infinity
+depending on which side your approach from.
+
+Again, we use the same index.html from Ep1. The basic setup of the main.js
+script is similar as well.
+
+In JavaScript, we use the sine function to move a circle on the screen.
+

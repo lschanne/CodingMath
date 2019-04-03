@@ -1,0 +1,14 @@
+Easing is really only great for moving an object into position. The starting
+movement is not amazing.
+
+Also, simple easing has an unpredictable time of arrival. Furthermore, it never
+actually stops moving the object. For these reasons, simple easing is really
+only good for one-off animations.
+
+For coreographing multiple objects or anything more complex, you will want to
+explore some more advanced tweening.
+
+Some guy named Robert Penner wrote the JavaScript tweening a while ago and
+stuck that ish in the Math library. We will copy his work, but not stick it
+in Math.
+He has a website: www.robertpenner.com/easing/

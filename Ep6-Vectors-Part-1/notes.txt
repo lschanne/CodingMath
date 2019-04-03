@@ -1,0 +1,27 @@
+Here we discuss the theory behind vectors.
+
+Vectors encapsulate both magnitude and direction.
+
+Typically a vector is represented with an arrow.
+
+We can refer to a vector pointing from point A to point B as vector AB.
+If point A is the origin, we may call it vector OB or simply vector B.
+If point B is at x=7 and y=4, we can refer to the vector as <7, 4>.
+
+We may of course add vectors. If we have vector A = <x0, y0> and
+vector B = <x1, y1>, then we may say that vector
+C = A + B = <x0 + x1, y0 + y1>.
+
+It can be useful to define some vector A = <x, y> as the sum of two vectors,
+Ax = <x, 0> and Ay = <0, y>. These three vectors together of course form a
+right triangle. If we let M = sqrt(x^2 + y^2) represent the magnitude of A
+and let theta be the angle between A and Ax, then we have x = M * cos(theta)
+and y = M * sin(theta).
+
+Vector subtraction is as easy as vector addition. Multiplication of vectors
+doesn't really exist between vectors. We have the dot product and cross
+product instead. We can of course multiply a vector by a scalar, which simply
+changes the magnitude, not the direction. Although, if the scalar is negative,
+that will reverse the direction, which could be considered a change in
+direction, or not.
+

@@ -1,0 +1,40 @@
+The "3D" that we'll be utilizing is just scaling the size of everything to look 
+further away". This type of 3D is sometimes called 2.5D or 3D Postcards in
+Space.
+
+Some people call this type of 3D "fake 3D", but really any 3D projection on a
+2D space is fake.
+
+Size and position will be our main contextual clues for distance in our 3D
+space.
+
+If we consider a camera taking a picture of something, then we know that the
+object of the picture is 3D, but the resulting picture is really only 2D.
+However, it will look 3D.
+
+So the distance from the aperture of the camera to the imaging surface is
+related to the "focal length" of the camera. It's not quite the same thing,
+but for now we'll say that it is.
+
+Now if you take the distance from the aperture to the object of the picture as
+z, you can determine perspective, p, via p = fl / (fl + z), where fl = "focal
+length".
+
+So we can use the resulting p as a scale factor for the size of the rendered
+object based on its apparent distance. This scale factor covers the size
+context clue for 3D space, now let's talk about the position context clue.
+
+Recall the idea of the vanishing point, which should be centered at the middle
+of the rendered image. Call the (x,y) coordinates (0,0) and the distance is
+infinite. All other objects will have a position on the screen which is based
+on this vanishing point. If an object is to the left of the vanishing point, it
+will have a negative x coordinate. If it is above the vanishing point, it will
+have a negative y coordinate. Conversely, an object below and to the right of
+the vanishing point will have positive x and y coordinates.
+
+If an object is at some position (x,y) relative to the vanishing point and is
+also at a distance z from the camera, then we can use the same p(z) and scale
+the (x,y) coordinates by that value of p. So it's basically the same thing that
+we did with the size.
+
+These concepts are enough to get started with coding.

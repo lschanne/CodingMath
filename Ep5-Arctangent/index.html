@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title></title>
+        <script type="text/javascript" src="main.js"></script>
+        <!-- this css section was added to remove the white margins on the page
+            and remove the scrollbars -->
+        <style type="text/css">
+        <!-- setting the margins to 0 pixels removes them -->
+        html, body {
+            margin: 0px;
+        }
+        <!-- by default, the canvas display type is set to inline, which can
+             sometimes make the canvas a bit bigger than the actual display
+             size of the browser, yielding scrollbars. setting the display type
+             to block should fix this issue. -->
+        canvas {
+            display: block;
+        }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+    </body>
+</html>

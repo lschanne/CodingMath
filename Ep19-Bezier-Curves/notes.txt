@@ -1,0 +1,2 @@
+Bezier curves are used for linear interpolation.
+You should watch the video - it's pretty neat.

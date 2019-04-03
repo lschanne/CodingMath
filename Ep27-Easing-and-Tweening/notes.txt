@@ -1,0 +1,20 @@
+We'll be stepping away from 3D concepts for a bit to discuss easing and
+tweening, which both refer to the idea of moving an object from a given
+position to another known position.
+
+So we cover how to go from point A to point B visually. Points A and B can be
+literal coordinate points or points of state (i.e. changing alpha values,
+changing shapes, etc.).
+
+The word "tweening" comes from early animations where you would have to hand
+draw every frame. The best animators would draw the most important frames, and
+then the rank-and-file animators would come in and draw the frames in between
+those important frames, aka the "tween" frames. The term stuck.
+
+Linear tweening is the most obvious and easiest to implement. However, it
+doesn't really look great. Natural tweening should implement some acceleration
+at the start and some decceleration at the end, which is referred to as
+"easing" in and "easing" out.
+
+Now we have the terms "tweening" and "easing" covered, as well as the basic
+concepts. So easing is just a type of tweening that looks more realistic.

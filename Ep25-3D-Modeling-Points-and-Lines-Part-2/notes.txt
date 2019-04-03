@@ -1,0 +1,4 @@
+Not much to say here. We looked at creating a bunch of 3D points, then
+projecting them onto a 2D screen. Then, we draw lines to connect those points
+and we get a nice 3D structure projected onto a 2D plane.
+

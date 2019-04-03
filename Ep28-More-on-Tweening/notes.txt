@@ -1,0 +1,6 @@
+Here we will refine the formula a bit and look at expanding the concept.
+
+One issue with using Zeno's paradox is that the code will just keep
+recalculating position even when the difference is like a millionth of a pixel.
+These calculations are just a waste, so we'll want to stop when the object
+gets "close enough".

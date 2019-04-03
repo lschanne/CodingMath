@@ -1,0 +1,14 @@
+Mathematically, we covered arccosine, arcsine, and arctangent.
+These may also be referred to as inverse cosine, inverse sine, and
+inverse arctangent.
+
+Generally speaking, cosine and sine will be used much more often than
+tangent, and arctangent will be used much more often than arccosine and
+arcsine.
+
+Arctangent tends to be quite useful in programming. Consider this situation:
+You have an object on the screen at point (x0, y0) and the cursor is at
+point (x1, y1). You know the cartesian distances between them:
+x = x1 - x0 and y = y1 - y0. If you wanted to get the angle between the
+cursor and the object, you can use the arctangent! theta = atan(y / a).
+

@@ -1,0 +1,7 @@
+You of course remember Hooke's Law, F = k * x, with k being the spring
+constant. So the force exerted by a string is directly proportional to the
+distance the spring is extended or compressed.
+
+It's pretty easy to code and make for some quite realistic looking animations.
+
+

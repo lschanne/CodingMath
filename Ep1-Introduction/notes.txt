@@ -1,0 +1,12 @@
+Source:
+https://www.youtube.com/watch?v=zm9bqSSiIdo
+
+All you need to run javascript is a text editor and a browser.
+
+You need to setup and html file, typically just called index.html that points
+to the javascript file.
+
+So something that isn't covered in the video is adding character context
+encoding to the html document. This may not be strictly necessary, but it is
+something that I have added to my index.html here.
+

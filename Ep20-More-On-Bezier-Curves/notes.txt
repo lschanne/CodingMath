@@ -1,0 +1,18 @@
+So we first looked at how to place a control point so that the curve passes
+through another particular point.
+
+The next part of the video touched on something you already explored - making
+bezier curves with any number of control points. His approach is a bit
+different. Instead of continuously interpolating until there is only one
+point remaining, he takes the midpoint of each control point and then
+just plots quadratic bezier curves between each midpoint. I'm not sure if those
+curves end up being the same, so I'll overlay them on top of each other and
+see what happens.
+
+So these methods don't seem to yield the same results. I guess the guy in the
+video never explicitly states that his method yields a true bezier curve. I
+guess this is reassuring in the sense that I wasn't sure how to prove that
+the results should be the same.
+
+Ah yes, later in the video he explicitly states that his technique is in fact
+not the same as a true bezier curve.

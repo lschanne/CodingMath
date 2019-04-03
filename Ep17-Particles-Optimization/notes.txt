@@ -1,0 +1,14 @@
+So this time around, we'll look at ways to optimize the particle object that
+we've been using pretty heavily.
+
+One thing we'll be doing is improving usability by allowing for a call to
+particle.x rather than particle.position.getX(), for example.
+
+So, yes, we will be pretty much abandoning the integration of the vector object
+into the particle object.
+
+With these updates, the particle object is much easier to interact with.
+
+Some people might take issue with the removal of the getter and setter
+functions. Now we just interact directly with the attributes x, y, vx, and vy.
+

@@ -1,0 +1,46 @@
+In game programming, we call it "collision detection"; in UI programming, we
+call it "hit testing". These are the same concept. We want to know when two
+objects collide.
+
+Often, we have to consider trade-offs between accuracy and performance.
+
+We have already looked at detecting when an object reaches the screen edge,
+which is a form of collision detection. We often want to detect collisions
+between two moving objects or collision between the mouse pointer and some
+other on-screen object.
+
+If we have two amorphous shapes, we may need to resort to bitmapping and
+graphical approaches to collision detection rather than mathematical collision
+detection.
+
+In general, mathematical testing is much more simple to implement, but it
+requires an approximation via a regular geometric shape.
+
+Generally, a circle, rectangle, or point are very useful approximations for
+shapes.
+
+We will discuss using these shapes for collision detection.
+
+If we want to detect a collision between two circles, you just need to check if
+the sum of the radii is greater than the distance between their centers. If so,
+they are colliding!
+
+A cirlce-point collision is basically a circle-circle collision where one
+circle has zero radius. It's not really worth covering.
+
+A rectangle-rectangle collision is nice I suppose. You have to check that both
+the X ranges and the Y ranges of both rectangles overlap. If so, they are
+colliding.
+
+A circle and a rectangle are colliding if the center of the circle is within
+the X and Y range of the rectangle after those ranges have been extended by
+the radius of the circle.
+
+Again, a point and a rectangle colliding is essentially the same as a circle
+and a rectangle colliding, except with the circle having zero radius.
+
+On my own, I have created a program to detect circle-circle and
+circle-rectangle collisions. I have placed a few objects on the screen.
+One object will follow the cursor around, and pressing space will toggle
+that object between a circle and a rectangle.
+

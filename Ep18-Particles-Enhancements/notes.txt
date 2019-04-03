@@ -1,0 +1,9 @@
+Just adding more stuff to the particle object.
+
+We can now easily handle a number of fixed springs to spring to or a number
+of other particles to gravitate to.
+
+Note that I didn't actually test this bad boy, so...
+
+I guess I should.
+

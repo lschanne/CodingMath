@@ -1,0 +1,17 @@
+This directory contains the examples from and my notes on a YouTube series
+called Coding Math, which uses JavaScript to teach the math used in
+programming.
+
+Here is the link to the channel:
+https://www.youtube.com/channel/UCF6F8LdCSWlRwQm_hfA2bcQ
+
+I also included the link to the first video in the Ep1-Introduction/notes.txt
+file. I won't include anymore of the links, as they should be easily found
+from these two.
+
+I guess I don't expect to learn a great deal of actual math in this course, as
+I would hope that my knowledge of math is greater than the basics needed for
+programming. However, it will hopefully serve as a nice refresher on the
+concepts as well as a good platform for learning JavaScript and even some
+basic Html and CSS.
+

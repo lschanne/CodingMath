@@ -1,0 +1,28 @@
+There are many types of friction, not just static and dynamic.
+
+Dry friction occurs when two surfaces are in contact.
+Skin friction occurs when an object is moving through a liquid or some sort
+of medium (even air) that provides resistance.
+
+These two types of frictions are probably the only ones needed for most
+programming needs.
+
+For our simple needs, we will simplify friction down into a single acceleration
+vector that directly opposes the velocity of the object.
+
+Friction, unlike gravity, will stop once the object is not moving. More
+specifically, if the object is not pushing against the surface or medium of
+friction, then that surface or medium is not pushing back. Therefore, there is
+no friction.
+
+We were using friction.setAngle(p.velocity.getAngle()) and
+p.velocity.subtractFrom(friction) as well as a getLength() and setLength() call
+in every frame just to handle friction! That ends up being a lot of trig
+function calls and some Math.sqrt() call. So the way we have our particle.js
+call is not exactly ideal right now.
+
+There is another way you can handle friction (there are like a billion!) that
+is not really true friction, but is much more efficient programming and more
+or less does the trick. You can simply multiply the magnitude of the velocity
+by some reduction factor.
+

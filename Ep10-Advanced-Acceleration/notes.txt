@@ -1,0 +1,18 @@
+We talked about dynamic forces with changing acceleration.
+
+We used listen events for the arrow keys being pressed to adjust the
+force acting on our particle.
+
+So the "keydown" event represents a key being pressed. Each key pressed has
+a key code. If you need to find out the key codes, you can use
+`consose.log(event.keyCode);`
+
+The key codes for left, up, right, and down arrows happen to be 37, 38, 39,
+and 40, respectively.
+
+We also added code to rotate our object so that it is always pointing in the
+direction in which it is moving.
+
+So by adding dynamic turning and thrusting as well as a screen wrap for our
+particle, we basically have the very bare bones of the classic asteroid game.
+
