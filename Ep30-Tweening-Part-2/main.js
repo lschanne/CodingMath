@@ -3,79 +3,83 @@ window.onload = function() {
         context = canvas.getContext("2d"),
         width = canvas.width = window.innerWidth,
         height = canvas.height = window.innerHeight,
-        tweeningMethod,
-        x = 100,
-        y = 100,
-        start = {},
-        target = {},
-        change = {},
-        startTime,
-        duration = 1000; // milliseconds
+        ball = {
+            x: 100,
+            y: 100,
+            alpha: 1
+        };
 
-        drawCircle(start.x, start.y);
+        tween(
+            ball, {x: 500, y: 200, alpha: 0}, 1000,
+            easeInOutQuad, render, tweenBack
+        );
 
-        document.body.addEventListener("click", function(event) {
-            if (event.ctrlKey && event.shiftKey) {
-                tweeningMethod = easeInOutQuad;
-            } else if (event.ctrlKey) {
-                tweeningMethod = easeInQuad;
-            } else if (event.shiftKey) {
-                tweeningMethod = easeOutQuad;
-            } else {
-                tweeningMethod = linearTween;
-            }
-            start.x = x;
-            start.y = y;
-            target.x = event.clientX;
-            target.y = event.clientY;
-            change.x = target.x - start.x;
-            change.y = target.y - start.y;
-            startTime = new Date();
-            update();
-        });
-
-        function update() {
-            context.clearRect(0, 0, width, height);
-
-            var time = new Date() - startTime;
-            if (time < duration) {
-                x = tweeningMethod(time, start.x, change.x, duration);
-                y = tweeningMethod(time, start.y, change.y, duration);
-                drawCircle(x, y);
-                requestAnimationFrame(update);
-            } else {
-                drawCircle(target.x, target.y);
-                start.x = target.x;
-                start.y = target.y;
-            }
+        function tweenBack() {
+            tween(
+                ball, {x: 100, y: 100, alpha: 1}, 1000,
+                easeInOutQuad, render, render
+            )
         }
 
-        function drawCircle(x, y) {
+        function render() {
+            context.clearRect(0, 0, width, height);
+            context.globalAlpha = ball.alpha;
             context.beginPath();
-            context.arc(x, y, 20, 0, Math.PI * 2, false);
+            context.arc(ball.x, ball.y, 20, 0, Math.PI * 2, false);
             context.fill();
         }
 
-        function linearTween(t, b, c, d) {
-            return c * t / d + b;
-        }
+        /*
+         * obj: the object to be tweened
+         * targetProperties: object containing properties of `obj` that are to
+         *                   be tweened; the values of those properties in
+         *                   `targetProperties` are the target values
+         * duration: time in milliseconds of the full tween
+         * easingFunc: standard tweening function from tween.js to be used
+         *             to perform the actual tweening
+         * onProgress: function to be called while the tween is in progress
+         * onComplete: function to be called once the tween is finished
+        */
+        function tween(
+            obj,
+            targetProperties,
+            duration,
+            easingFunc,
+            onProgress,
+            onComplete
+        ) {
+            var starts = {},
+                changes = {},
+                startTime = new Date();
 
-        // Quadratic easing in - accelerating from zero velocity
-        // t: current time, b: beginning value, c: change in value, d: duration
-        // t and d can be in frames or seconds/milliseconds
-        function easeInQuad(t, b, c, d) {
-            return c*(t/=d)*t + b;
-        }
+            for (var prop in targetProperties) {
+                starts[prop] = obj[prop];
+                changes[prop] =  targetProperties[prop] - starts[prop];
+            }
 
-        // quadratic easing out - decelerating to zero velocity
-        function easeOutQuad(t, b, c, d) {
-            return -c*(t/=d)*(t-2) + b;
-        }
+            update();
 
-        // quadratic easing in/out:
-        // acceleration until halfway, then decelaration
-        function easeInOutQuad(t, b, c, d) {
-            if ((t/=d/2) < 1) return c/2*t*t + b;
-            return -c/2 * ((--t)*(t-2) -1) + b;
+            function update() {
+                var time = new Date() - startTime,
+                    keepGoing = true;
+
+                if (time >= duration) {
+                    keepGoing = false;
+                    time = duration;
+                }
+
+                for (var prop in targetProperties) {
+                    obj[prop] = easingFunc(
+                        time, starts[prop], changes[prop], duration
+                    );
+                }
+
+                if (keepGoing) {
+                    onProgress();
+                    requestAnimationFrame(update);
+                } else {
+                    onComplete();
+                }
+            }
         }
 }

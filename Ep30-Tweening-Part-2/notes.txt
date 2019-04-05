@@ -1,1 +1,13 @@
+From the last episode, we know now that tweening has a lot of overhead.
+We need to store properties of the object to be tweened, start time, current
+time, duration of the tween, etc.
 
+We looked at some ways we could generalize the process and automate that
+overhead a bit.
+
+I guess the next step to take would be passing in multiple objects to be
+tweened? Maybe even multiple durations for those different objects. However,
+there is of course a trade-off. If you try to overgeneralize and accomodate
+every possible scenario, you get code bloating and added complexity. Still,
+I feel like passing in a list of objects, target properties, and durations
+isn't too bad.

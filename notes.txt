@@ -15,3 +15,10 @@ programming. However, it will hopefully serve as a nice refresher on the
 concepts as well as a good platform for learning JavaScript and even some
 basic Html and CSS.
 
+
+---
+
+So I make this note now at Ep.30. The guy doesn't really go into much
+"pure math" at all, but many of the "mathy" programming techniques that he
+covers are actually quite interesting and in some cases brilliant.
+
