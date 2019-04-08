@@ -1,0 +1,16 @@
+So finally, the last episode on tweening.
+We kind of just briefly touched on a few more advanced tweening formula
+families, like quadratic, cubic, etc.
+
+In general, we saw that increasing the degree of the polynomial used for the
+easing increased the "strength" of the easing effect (i.e. the acceleration
+was greater). This of course makes sense because the ease in formulas look
+like this: a*t^n + b, where t is the percentage of the duration which has
+elapsed. So of course as n increases, the easing becomes more dramatic.
+The general principle holds for easing out, and ease in-out.
+
+Then of course we looked at how more complicated tweening, such as ease in-out,
+use conditionals and multiple formulas to create the effect. Good tweening
+would probably expect a smooth, spline-like behavior from the frankenstein.
+
+Also, no real code came out of this episode.
