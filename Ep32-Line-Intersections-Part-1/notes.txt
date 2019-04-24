@@ -1,0 +1,34 @@
+Episode 32, Line Intersections Part I
+
+We will discuss how to determine where two 2-D lines intersect.
+
+Any pair of non-parallel 2-D lines will eventually intersect. This is not true
+of line segments.
+
+We can of course define a line with "y = m * x + b" or with two points on the
+line.
+
+Recall that m = (Y2 - Y1) / (X2 - X1).
+
+A third way to represent a line is known as "standard form": Ax + By = C
+A = X2 - X1, B = Y1 - Y2, C = A * X1 + B * Y1
+However, in standard form, I believe A should be positive and maybe C has to be
+1, but I'm less sure about the second part and also not totally sure of the
+first part.
+
+So if we have two lines:
+1) A1 * x + B1 * y = C1
+2) A2 * x + B2 * y = C2
+And we know all of the constants, we can solve for (x, y), the intersection of
+the two lines.
+
+We can solve for x in (1):
+3) x = (C1 - B1 * y) / A1
+
+Then substitute (3) for x in (2) and solve for y:
+4) y = (A1 * C2 - A2 * C1) / (A1 * B2 - A2 * B1)
+
+Then substitute (4) for y in (1) and solve for x:
+5) x = (B2 * C1 - B1 * C2) / (A1 * B2 - A2 * B1)
+
+And we're done.
