@@ -1,0 +1,9 @@
+In this episode, we'll look at applications for our intersection functions
+from the previous two episodes.
+
+Collision detection is a good candidate for line segment intersection detection
+when using irregular shapes (like a star).
+
+He also talked about how you could use line segment intersection to detect
+if a point would cross over a line on the next frame. I didn't include that
+code, but it is an interesting application.
