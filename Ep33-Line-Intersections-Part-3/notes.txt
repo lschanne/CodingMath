@@ -1,3 +1,4 @@
 We will expand on our work in the previous chapter by handling line segments
 and parallel lines. Of course, I already took a stab at handling parallel lines
-myself in the last chapter. My approach was exactly the same as the guy's.
+myself in the last chapter. My approach was exactly the same as the one used
+in this episode.
