@@ -1,0 +1,8 @@
+As you know, a fractal is a pattern of infinite fractions. Something like
+1 + (1/(2 + 1)/(2 + 1/(2 + ...)))
+
+One way to think about a fractal as a shape is to think of a whole shape that
+is made by parts that are exact copies of the whole shape. So theoretically,
+fractals are infinite.
+
+So naturally, to render fractal shapes, we use recursion.
