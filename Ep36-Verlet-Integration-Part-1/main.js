@@ -15,7 +15,6 @@ window.onload = function() {
     points.push({
         x: 100,
         y: 100,
-
         // instead of storing velocities, we will store the previous positions
         oldx: 95,
         oldy: 95

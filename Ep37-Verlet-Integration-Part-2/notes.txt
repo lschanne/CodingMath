@@ -1,0 +1,27 @@
+Continuing where we left off...
+
+We will now create sticks that connect two points and have a specific length.
+The sticks constrain the motion of the two points so that they are always
+that length of distance apart from each other.
+
+These sticks create the "ragdoll" effects for which Verlet integration is
+known.
+
+The sticks also eliminate the potential feedback loops that can occur in
+Euler's integration.
+
+The sticks are the reason why the velocities are not stored on the points.
+We use the physics that exist in the program to move each point. Then the
+sticks adjust the points according to the set length. On the next frame, the
+velocity will be different due to that adjustment from the sticks.
+
+To move the points according to stick length, we can get the distance between
+the points. Then we get the difference between that distance and the length of
+the stick. Then we can divide that difference by the distance of the stick and
+further divide that result by 2 to get the percentage by which each point
+should move. Then we get an offset for the x- and y-axis, which we can add to
+one point and subtract from the other.
+
+Every time we update a stick, other sticks attached to either of the points on
+that stick will be warped. However, if we do this a couple times per frame, the
+sticks we approach an equilibrium where each stick is happy.
