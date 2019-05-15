@@ -1,0 +1,16 @@
+Continuing where we left off...
+
+So one thing that would be nice is to selectively render certain sticks.
+For example, the support beam running through the middle of a square might be
+nice to hide.
+
+We added some more styling to sticks and created a way to add forms composed
+of multiple points.
+
+Mr. Peters (Dr?, maybe) also discussed rendering an image in the space between
+four points. For image rendering, the points should always form a rectangle
+that is ideally the same aspect ratio as the rendered image. I skipped the
+implementation of this segment in my own code because I didn't feel like
+grabbing an image for it.
+
+Although it is actually pretty interesting, and the video is good.
