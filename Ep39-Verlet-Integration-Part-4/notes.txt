@@ -1,0 +1,14 @@
+Continuing where we left off...
+
+We will look at pinning points, which allows for static objects that other
+points and sticks can pivot on, swing on, rotate around, etc.
+(This part is saved as pinned_chain.js)
+
+Then we looked at adding some moving parts to the system.
+
+The rest of the video then looked at abstracting the code a bit and using JSON
+files to load in the desired points, sticks, etc.
+
+I didn't do this part of the code, because it included a lot of mindless work,
+and the actual concept was not too complicated. While not complicated, the
+concept is definitely good to keep in mind.
