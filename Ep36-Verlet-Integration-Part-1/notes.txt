@@ -1,0 +1,25 @@
+Verlet integration is a way of calculating the path of an object over time when
+a bunch of forces are acting on it. It is the basis of "ragdoll physics".
+
+So far we've been using Euler integration, which is fast, but not so accurate.
+In Euler's integration, we simply take the current velocity of the object and
+add it to the position and add any other forces to the velocity.
+
+With Euler's integration, the longer the interval between updates, the less
+accurate the integration.
+
+Another integration technique is Runge-Kutta, which is much more accurate, but
+also much slower.
+
+Euler's integration can also lead to some tricky feedback loops.
+
+Verlet integration is not really more accurate than Euler's integration, but it
+is more stable and less prone to those feedback loops.
+
+One each of our points, we will store the current position. Instead of storing
+the current velocity, we will store the previous position of the point, which
+can then be used to calculate velocity.
+
+One of the key points of Verlet integration is that we can apply forces
+directly to the current position of each point. This change will then affect
+the derived velocities on the next frame.
