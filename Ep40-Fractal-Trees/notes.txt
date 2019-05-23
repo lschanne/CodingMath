@@ -1,0 +1,32 @@
+"Clouds are not spheres, mountains are not cones, coastlines are not circles,
+and bark is not smooth, nor does lightning travel in a straight line."
+ - Benoit Mandelbrut, Fractal Geometry of Nature
+^ that's the dude who coined the term "fractal"
+
+A "fractal" is a form that has self-similarities on different scales. These
+exist everywhere in nature. A tree is a good example, so we'll look at that.
+
+Consider a "branch" to be a line that splits off into two lines at the halfway
+point, each of those lines being branches themselves. This would form a very
+simple tree.
+
+We added some randomness to these simple trees to make them look (sometimes) a
+bit more realistic. Although a lot of times they look like total chaos, which
+is also nice.
+
+I saved that first part as simple-fractal-trees.js
+
+Then we looked at making Pythagorean trees, which is a little hard to explain
+in writing. But if you were to draw a right triangle such that the hypotenuse
+was on the "bottom" and parallel with the "ground", then you can draw three
+perfect squares using the edges of the triangle as edges of the three different
+squares. Then you would have a tree like object. You could continue the pattern
+by using the squares that form the branches to construct two new right
+triangles and draw two branch squares off of each of those. Repeat ad nauseum.
+
+This will be in the main.js file.
+
+To code this is a little tricky, but we will use some canvas transformations
+to help simplify the math a bit.
+
+And we added a bit of animation to to the Pythagorean trees.
