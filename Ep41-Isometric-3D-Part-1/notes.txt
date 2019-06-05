@@ -1,0 +1,11 @@
+Isometric 3D is sometimes described as "3D without perspective", which isn't
+quite true. Isometric 3D lacks linear perspective, but you can't create any 3D
+effective without some sort of perspective.
+
+Isometric 3D is so named because all of the angles axes are equal. Although
+even that isn't quite true. Usually we use 2:1 triangles to build the "blocks"
+in Isometric 3D, which makes it really Diametric 3D, but people don't call it
+by that name.
+
+^ not really a great description; the visuals are kind of necessary, so watch
+the video
