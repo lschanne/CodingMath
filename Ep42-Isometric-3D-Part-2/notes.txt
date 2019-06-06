@@ -1,0 +1,19 @@
+Building on the last episode, we'll look at building predefined layouts, with
+specific tiles/blocks in specific locations.
+
+Usually you would want to keep the predefined layouts in a separate json file.
+In this case, we'll skip that for simplicity.
+
+These layouts can be totally static or programatically generated. I think even
+if they are programatically generated, it could be a good idea to save a static
+file of the generated layout to improve performance.
+
+We created another canvas layer on which to draw dynamic objects on top of the
+static isometric grid. The extra canvas layer has to be created in the HTML and
+then identified in the JavaScript.
+
+We used that layer to move around a "character" object on top of the
+isometric 3D grid.
+
+TODO: fix the drawCharacter() function.
+^ yeah right, that's never getting done.
