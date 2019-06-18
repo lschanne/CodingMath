@@ -13,6 +13,8 @@ window.onload = function() {
         arm6 = Arm.create(arm5.getEndX(), arm5.getEndY(), 100, angle);
     arm2.parent = arm;
     arm3.parent = arm2;
+    arm5.parent = arm4;
+    arm6.parent = arm5;
 
     update();
     function update() {

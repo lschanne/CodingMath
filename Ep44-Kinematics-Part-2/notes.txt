@@ -1,0 +1,5 @@
+This time around, we'll move our algorithms for keeping the arms together as
+a system into a separate file that improves usability and scalability.
+
+We used this new forward kinematics system and some updates to the arm object
+to create two legs moving in a walk cycle - pretty nifty.
