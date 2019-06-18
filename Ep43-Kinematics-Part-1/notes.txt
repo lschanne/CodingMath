@@ -1,0 +1,15 @@
+In programming, kinematics usually refers to forward and inverse kinematics.
+
+We are typically interested in a set of segments that
+are attached/connected somehow as a whole system.
+
+In forward kinematics, we move the unit and see how that adjusts the
+individual segment.
+
+In reverse kinematics, we move a segment and see how that affects the rest
+of the system.
+
+When we move each part of the system using numbers with a common divisor,
+the system moves in a repeated pattern or cycle.
+On the other hand, if we use numbers that are not at all related, the motion
+of the system can be somewhat random and unpredictable.
