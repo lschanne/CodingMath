@@ -1,0 +1,8 @@
+Now we'll do some inverse kinematics, where we select a position that we want
+a particular segment to reach. Then we work backwards and figure out the
+position of each other segment.
+
+We will create a new Arm object that is similar to the one we used for
+forward kinematics.
+
+We will also create an iksystem that is similar to the fksystem.
