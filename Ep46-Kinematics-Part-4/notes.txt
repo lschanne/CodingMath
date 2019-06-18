@@ -1,0 +1,7 @@
+Now we will fix the base of the system and reach out towards a specific point.
+
+We will have to use inverse kinematics to drag the end point to the target.
+Then we use forward kinematics to move the base back into its fixed position.
+
+So then we added an animated ball and two systems that reach to the ball as
+it moves.
